@@ -8,7 +8,7 @@ import org.springframework.scheduling.annotation.Async;
 import org.springframework.web.bind.annotation.*;
 import java.util.*;
 
-@CrossOrigin(origins = "https://phone-book-my-api.herokuapp.com/")
+@CrossOrigin(origins = "phone-book-my-api.herokuapp.com")
 @RestController
 @RequestMapping("/api/v1/")
 public class EntryController {
