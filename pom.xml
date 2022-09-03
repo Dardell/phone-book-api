@@ -11,7 +11,7 @@
 	<groupId>com.dardell</groupId>
 	<artifactId>phone-book-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>employee-system-api</name>
+	<name>phone-book-api</name>
 	<description>Test API project for Spring Boot</description>
 	<properties>
 		<java.version>18</java.version>
