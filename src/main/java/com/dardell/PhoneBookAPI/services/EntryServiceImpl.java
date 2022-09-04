@@ -61,7 +61,8 @@ public class EntryServiceImpl implements EntryService {
                 = entryRepository.findById(id).get();
         entryEntity.setName(entry.getName());
         entryEntity.setPhoneNumber(entry.getPhoneNumber());
-        entryEntity.setDate(DateFormatter.getFormattedDate());
+        if (!entry.getDate().equals("keepTheDate")) {
+            entryEntity.setDate(DateFormatter.getFormattedDate());}
         entryEntity.setAsyncString(entry.getAsyncString());
         entryRepository.save(entryEntity);
         return entry;
