@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 @Service
 public class EntryServiceImpl implements EntryService {
 
-    private EntryRepository entryRepository;
+    private final EntryRepository entryRepository;
 
     public EntryServiceImpl(EntryRepository entryRepository) {
         this.entryRepository = entryRepository;
@@ -21,7 +21,7 @@ public class EntryServiceImpl implements EntryService {
 
     @Override
     public Entry createEntry(Entry entry) {
-        EntryEntity entryEntity = new EntryEntity();
+            EntryEntity entryEntity = new EntryEntity();
 
         BeanUtils.copyProperties(entry, entryEntity);
         entryRepository.save(entryEntity);

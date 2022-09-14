@@ -4,11 +4,10 @@ import com.dardell.PhoneBookAPI.model.Entry;
 import com.dardell.PhoneBookAPI.services.EntryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.web.bind.annotation.*;
 import java.util.*;
 
-@CrossOrigin(origins = "phone-book-my-api.herokuapp.com")
+@CrossOrigin(origins = "phone-book-ru-api.herokuapp.com")
 @RestController
 @RequestMapping("/api/v1/")
 public class EntryController {
